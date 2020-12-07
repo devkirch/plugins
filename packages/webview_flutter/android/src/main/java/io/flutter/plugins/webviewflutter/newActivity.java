@@ -153,7 +153,7 @@ public class newActivity extends Activity {
                 Bundle bundle = data.getExtras();
                 try {
                     Bitmap bitmap = (Bitmap) bundle.get("data");
-                    uri = Uri.parse(MediaStore.Images.Media.insertImage(getContentResolver().takePersistableUriPermission(uri, Intent.FLAG_GRANT_READ_URI_PERMISSION), bitmap, null,null));
+                   uri = Uri.parse(MediaStore.Images.Media.insertImage(getContentResolver(), bitmap, null,null));
                     Uri[] results = new Uri[]{uri};
                     mUploadMessageArray.onReceiveValue(results);
                 }catch (Exception e){
