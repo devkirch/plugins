@@ -69,7 +69,7 @@ public class newActivity extends Activity {
     }
 
     private void openAblum() {
-        Intent intent = new Intent(Intent.ACTION_GET_CONTENT);//任意类型文件
+        Intent intent = new Intent(Intent.ACTION_OPEN_DOCUMENT);//任意类型文件
         intent.setType("*/*");
         intent.addCategory(Intent.CATEGORY_OPENABLE);
         startActivityForResult(intent,1);
