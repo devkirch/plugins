@@ -69,6 +69,7 @@ public class newActivity extends Activity {
     }
 
     private void openAblum() {
+        Log.i("TAG","MACH KACKE AUF ");
         Intent intent = new Intent(Intent.ACTION_OPEN_DOCUMENT);//任意类型文件
         intent.setType("*/*");
         intent.addCategory(Intent.CATEGORY_OPENABLE);
