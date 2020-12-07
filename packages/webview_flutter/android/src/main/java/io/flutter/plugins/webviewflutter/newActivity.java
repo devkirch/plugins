@@ -144,9 +144,9 @@ public class newActivity extends Activity {
         if(data != null){
             Uri uri = data.getData();
            
-            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.KITKAT) {
-            getContext().getContentResolver().takePersistableUriPermission(uri, Intent.FLAG_GRANT_READ_URI_PERMISSION | Intent.FLAG_GRANT_WRITE_URI_PERMISSION);
-        }
+        
+         getContentResolver().takePersistableUriPermission(uri, Intent.FLAG_GRANT_READ_URI_PERMISSION | Intent.FLAG_GRANT_WRITE_URI_PERMISSION);
+       
             Log.i("TAG","! "+data.getClass()+" * "+data);
             Log.i("TAG","URi "+uri);
 
