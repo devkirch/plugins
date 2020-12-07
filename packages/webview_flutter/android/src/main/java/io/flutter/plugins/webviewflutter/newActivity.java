@@ -74,7 +74,7 @@ public class newActivity extends Activity {
         intent.addCategory(Intent.CATEGORY_OPENABLE);
      
     
-        intent.setType("*image/*");
+        intent.setType("image/*");
         
         intent.addFlags(Intent.FLAG_GRANT_PERSISTABLE_URI_PERMISSION);
         intent.addFlags(Intent.FLAG_GRANT_READ_URI_PERMISSION);
