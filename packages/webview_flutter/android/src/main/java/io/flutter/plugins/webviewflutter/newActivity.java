@@ -72,9 +72,9 @@ public class newActivity extends Activity {
         Log.i("TAG","MACH KACKE AUF 2 ");
         Intent intent = new Intent(Intent.ACTION_OPEN_DOCUMENT);//任意类型文件
         intent.addCategory(Intent.CATEGORY_OPENABLE);
-        intent.type = "image/*"
-        intent.addFlags(Intent.FLAG_GRANT_PERSISTABLE_URI_PERMISSION)
-        intent.addFlags(Intent.FLAG_GRANT_READ_URI_PERMISSION)
+        intent.type = "image/*";
+        intent.addFlags(Intent.FLAG_GRANT_PERSISTABLE_URI_PERMISSION);
+        intent.addFlags(Intent.FLAG_GRANT_READ_URI_PERMISSION);
         startActivityForResult(intent,1);
     }
 
